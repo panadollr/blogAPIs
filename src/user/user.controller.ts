@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Query, UseGuards } from "@nestjs/common";
 import { UserService } from "./user.service";
 import { ApiBearerAuth, ApiExcludeEndpoint, ApiOperation, ApiResponse, ApiTags } from "@nestjs/swagger";
-import { AuthGuard } from "src/auth/auth.guard";
+import { AuthGuard } from "../auth/auth.guard";
 import { FilterUserDto } from "./dtos/filter-user-dto";
 import { User } from "./user.entity";
 import { RegisterUserDto } from "src/auth/dtos/register-user-dto";
